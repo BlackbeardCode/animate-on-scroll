@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+  background-color: #131316;
+  color: #039c1f;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  min-height: 70vh;
+  margin-bottom: 33vh;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.robots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.robot:nth-child(2) {
+  transition-delay: 200ms;
+}
+.robot:nth-child(3) {
+  transition-delay: 400ms;
+}
+.robot:nth-child(4) {
+  transition-delay: 600ms;
+}
+.robot:nth-child(6) {
+  transition-delay: 200ms;
+}
+.robot:nth-child(7) {
+  transition-delay: 400ms;
+}
+.robot:nth-child(8) {
+  transition-delay: 600ms;
+}
+
+.robot {
+  background-color: #242426;
+  border-radius: 1em;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.card {
+  display: inline-flexbox;
+}
+
+.hiddenTR {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.hiddenTD {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
