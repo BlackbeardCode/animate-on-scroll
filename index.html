@@ -15,89 +15,110 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <section id="comp-1" class="hiddenTD">
-      <h1>Hello there!</h1>
-      <h2>Looking for some avatars?</h2>
-    </section>
+    <nav>
+      <div class="topnav">
+        <div class="logo">
+          <a href="#">Logo</a>
+        </div>
+        <div class="navigator">
+          <a href="#" class="btn">Home</a>
+          <a href="#" class="btn">About</a>
+          <a href="#" class="btn">Contact</a>
+        </div>
+        <div class="user">
+          <a href="#" class="btn">Login</a>
+          <a href="#" class="btn">Register</a>
+        </div>
+      </div>
+    </nav>
 
-    <section id="comp-2" class="hiddenTR">
-      <h3>Here are the Dicebear avatars</h3>
-      <div class="robots">
-        <div class="robot hiddenTD">
-          <h4>human</h4>
-          <img
-            src="https://avatars.dicebear.com/api/bottts/human.svg?size=150
+    <div class="container">
+      <header>
+        <section id="comp-1" class="hiddenTD">
+          <h1>Hello there!</h1>
+          <h2>Looking for scroll animations?</h2>
+        </section>
+      </header>
+
+      <section id="comp-2" class="hiddenTR">
+        <h3>Here is a Vanilla JS simple animation</h3>
+        <div class="robots">
+          <div class="robot hiddenTR">
+            <h4>human</h4>
+            <img
+              src="https://avatars.dicebear.com/api/bottts/human.svg?size=120
             "
-          />
+            />
+          </div>
+          <div class="robot hiddenTR">
+            <h4>bottts</h4>
+            <img
+              src="https://avatars.dicebear.com/api/bottts/bottts.svg?size=120"
+            />
+          </div>
+          <div class="robot hiddenTR">
+            <h4>male</h4>
+            <img
+              src="https://avatars.dicebear.com/api/bottts/male.svg?size=120"
+            />
+          </div>
+          <div class="robot hiddenTR">
+            <h4>female</h4>
+            <img
+              src="https://avatars.dicebear.com/api/bottts/female.svg?size=120"
+            />
+          </div>
+          <div class="text-box">
+            <h4>Check out the code!</h4>
+            <code>
+              const observer = new IntersectionObserver((entries) => {<br />
+              entries.forEach((e) => { console.log(e);<br />
+              if (e.isIntersecting) {<br />
+              e.target.classList.add('show');<br />
+              console.log('isIntersecting'); <br />}<br />
+              else { e.target.classList.remove('show');<br />
+              console.log('isIntersecting'); <br />} <br />}); <br />});</code
+            >
+          </div>
         </div>
-        <div class="robot hiddenTR">
-          <h4>bottts</h4>
-          <img
-            src="https://avatars.dicebear.com/api/bottts/bottts.svg?size=150"
-          />
-        </div>
-        <div class="robot hiddenTR">
-          <h4>male</h4>
-          <img
-            src="https://avatars.dicebear.com/api/bottts/male.svg?size=150"
-          />
-        </div>
-        <div class="robot hiddenTR">
-          <h4>female</h4>
-          <img
-            src="https://avatars.dicebear.com/api/bottts/female.svg?size=150"
-          />
-        </div>
-        <div class="robot hiddenTR">
-          <h4>human</h4>
-          <img
-            src="https://avatars.dicebear.com/api/bottts/human.svg?size=150
-              "
-          />
-        </div>
-        <div class="robot hiddenTR">
-          <h4>bottts</h4>
-          <img
-            src="https://avatars.dicebear.com/api/bottts/bottts.svg?size=150"
-          />
-        </div>
-        <div class="robot hiddenTR">
-          <h4>male</h4>
-          <img
-            src="https://avatars.dicebear.com/api/bottts/male.svg?size=150"
-          />
-        </div>
-        <div class="robot hiddenTR">
-          <h4>female</h4>
-          <img
-            src="https://avatars.dicebear.com/api/bottts/female.svg?size=150"
-          />
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="comp-3" class="hiddenTR">
-      <div class="card">
-        <h4>Some more little title</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
-          eaque.
-        </p>
-      </div>
-      <div class="card">
-        <h4>Some more little title</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
-          eaque.
-        </p>
-      </div>
-      <div class="card">
-        <h4>Some more little title</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
-          eaque.
-        </p>
-      </div>
-    </section>
+      <section id="comp-3" class="hiddenTR">
+        <div class="card">
+          <h4>Some more little title</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+            necessitatibus natus molestias blanditiis aut porro iusto adipisci
+            eligendi repellat quisquam fugiat quas corporis ipsa quia enim
+            aperiam neque laudantium quos quibusdam doloribus, eveniet ab.
+            Dolorem, nulla. Sunt tenetur maxime id facilis ea, ipsam
+            repudiandae, quaerat sint quia magnam dolorem aperiam.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Some more little title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            et alias itaque eum, earum voluptatum, quia similique labore, quam
+            quo sit. Pariatur fugiat perspiciatis qui, aliquid dignissimos
+            dolores, repellat consequuntur facere laudantium unde expedita amet
+            eveniet id culpa velit sunt voluptate quidem inventore eum harum
+            nulla ipsam reiciendis aliquam? Molestias culpa nisi distinctio
+            dignissimos molestiae sit architecto asperiores quam repellat.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Some more little title</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+            provident praesentium asperiores explicabo, modi quidem corporis
+            facere, velit ut omnis eaque eos ducimus? Voluptatem quaerat atque
+            maxime excepturi velit illo?
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer></footer>
   </body>
 </html>

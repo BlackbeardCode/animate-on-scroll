@@ -10,6 +10,11 @@ body {
   color: #039c1f;
 }
 
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 section {
   display: grid;
   place-items: center;
@@ -18,7 +23,7 @@ section {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 15rem;
   font-weight: 900;
   font-style: italic;
 }
@@ -34,8 +39,51 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 400;
+  margin-bottom: 15px;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav {
+  position: sticky;
+  width: 100%;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 800;
+  margin-left: 20px;
+}
+.navigator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.user {
+  justify-items: self-end;
+}
+.btn {
+  padding: 10px 32px;
+  margin: 0 15px;
+  border-radius: 13px;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background-color: #039c1f;
+  transform: translateY(-5%);
+  transform: scale(1.2);
 }
 
 .robots {
@@ -72,6 +120,11 @@ h4 {
 
 .card {
   display: inline-flexbox;
+}
+
+.text-box {
+  margin-top: 3.5rem;
+  padding: 1rem;
 }
 
 .hiddenTR {
